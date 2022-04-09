@@ -1,0 +1,237 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:rgb(255,255,255)
+}
+.sec-1{
+    height: 70px;
+    
+}
+.head{
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 100px;
+    padding-top: 30px;
+   
+    
+}
+.para-1{
+    padding-right: 20px;
+    color:rgb(31, 29, 29);
+    position: relative;
+    text-transform: capitalize;
+}
+.para-1::before{
+    content: "";
+    position: absolute;
+    display: inline;
+    transition: 180ms;
+    bottom: 47px;
+    width: 70%;
+}
+.para-1:hover::before{
+    border: 1px solid rgba(5, 5, 5,.5);
+}
+.fa-th{
+    padding-right: 30px;
+    padding-top: 5px;
+    color:rgb(31, 29, 29) ;
+    position: relative;
+}
+
+.fa-th::after{ 
+    content: "";
+    position: absolute;
+    display: inline;
+    height: 35px;
+    width: 35px;
+    z-index: -1000;
+    top: -5px;
+    left: -8px;
+    align-items: center;
+}
+.fa-th:hover::after{
+    border-radius: 50%;
+    background-color:rgba(116, 113, 113,.4)  
+}
+.name-position{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    color:white;
+    position: relative;
+    margin-top: -8px;
+    z-index: 1000;
+    text-align: center;
+    padding-top: 3px;
+    padding-left: 12px;
+}
+.name-position::after{
+    content:"" ;
+    position: absolute;
+    width: 35px;
+    height:35px;
+    border-radius: 50%;
+    background-color: rgb(9, 36, 9);
+    top:0;
+    bottom:22px;
+    left: 0;
+    right: 10px;
+    z-index: -1000;
+}
+.sec-2{
+    height: 618px;
+}
+.google{
+   margin: 0 auto;
+    width: 700px;
+    height: 500px;
+}
+.image-google{
+ margin-top: 100px;
+ margin-left: 100px;
+}
+.inputs{
+    width: 100%;
+    height: 260px;
+    position: relative; 
+}
+input[type="text"]{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    border:1px solid rgba(128, 128, 128,.5);
+    border-radius: 30px;
+    outline:none;
+    background-image: url("microphone.PNG");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 40px; 
+    padding-right: 40px; 
+    
+}
+.fa-search{
+    position: absolute;
+    left: 15px;
+    top:35px;
+    z-index: 1000;
+    color: gray;
+    
+}
+input[type="text"]:hover{
+    box-shadow: 0 0 10px rgb(226, 221, 221),0 0 20px rgb(226, 221, 221);
+    transition: 180ms;
+}
+.para-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.para-3{
+   padding: 8px;
+    background-color: rgba(236, 231, 231, 0.3);
+    border-radius: 5px;
+    margin-right:20px ;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 20s;
+    
+}
+.para-3:hover{
+    transition: 180ms;
+    border:1px solid rgba(128, 128, 128,.5);
+   box-shadow:0 0 10px rgba(226, 221, 221,.4),0 0 20px rgba(226, 221, 221,.4); ;
+}
+.para-4{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.sec-3{
+    background-color: #f2f2f2;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.para-5{
+    padding-top: 23px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    color:grey;
+    text-transform: capitalize;
+}
+.footer-div{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.divided-div{
+   display: flex;
+   justify-content: space-around;
+}
+.para-6{
+    padding:0 20px 0 20px;
+    color: grey;
+    text-transform: capitalize;
+    position: relative;
+}
+.para-6::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    right: 0;
+    transition: 180ms;
+
+}
+.para-6:hover::after{
+    border: 1px solid gray;
+    width: 70%;
+}
+.leaf{
+    position: relative;
+    color: gray;
+}
+.leaf::before{
+ position:absolute ;
+ content: "";
+ top: 5px;;
+ left: -19px;
+ display: block;
+ background-image: url("leaf.PNG");
+ background-repeat: no-repeat;
+ background-size: contain;
+ width: 20px;
+ height: 20px;
+ 
+}
+.leaf::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 180ms;
+
+}
+.leaf:hover::after{
+    border: 1px solid gray;
+    width: 100%;
+}
